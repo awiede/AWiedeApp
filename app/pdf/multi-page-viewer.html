@@ -1,0 +1,19 @@
+<nav ng-class="getNavStyle(scroll)">
+  <div class="navbar">
+    <button class="btn btn-primary glyphicon glyphicon-backward" ng-click="goPrevious()"></span></button>
+    <button class="btn btn-primary glyphicon glyphicon-forward" ng-click="goNext()"></span></button>
+
+    <button class="btn btn-primary glyphicon glyphicon-zoom-in" ng-click="zoomIn()"></span></button>
+    <button class="btn btn-primary glyphicon glyphicon-zoom-out" ng-click="zoomOut()"></span></button>
+
+    <span class="">Page: </span>
+    <input type="text" min=1 ng-model="pageNum">
+    <span> / {{pageCount}}</span>
+
+    <a class="btn btn-primary" ng-href="{{selection.pdfUrl}}" download="{{selection.downloadName}}">Download</a>
+  </div>
+</nav>
+
+<hr>
+
+<canvas id="zeta" class="rotate0"></canvas>

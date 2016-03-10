@@ -8,7 +8,7 @@
  * Controller of the awiedeWebApp
  */
 angular.module('awiedeWebApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+  .controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
     $scope.isCollapsed = true;
 
     $scope.init = function() {

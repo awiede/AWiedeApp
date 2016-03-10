@@ -11,7 +11,8 @@
 angular
   .module('awiedeWebApp', [
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'pdf'
   ])
   .config(['$stateProvider', '$urlRouterProvider',function ($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -32,6 +33,12 @@ angular
         templateUrl: 'contact/contact.view.html',
         controller: 'ContactCtrl',
         controllerAs: 'contact'
+      })
+      .state('resume', {
+        url: '/resume',
+        templateUrl: 'resume/resume.view.html',
+        controller: 'ResumeCtrl',
+        controllerAs: 'resume'
       });
 
     $urlRouterProvider.otherwise('/');
