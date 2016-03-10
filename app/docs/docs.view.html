@@ -1,0 +1,21 @@
+<div>
+  <div ng-controller="DocsCtrl">
+    <select class="form-control" ng-model="selection" ng-options="doc.shortName for doc in docs">
+      <option value="">MAKE A SELECTION</option>
+    </select>
+    <div ng-switch="selection.switchName">
+      <div class="wrapper" ng-switch-when="zeta">
+        <h1 class="page-header">{{selection.pdfName}}</h1>
+        <ng-pdf template-url="pdf/multi-page-viewer.html" canvasid="zeta" scale="2"></ng-pdf>
+      </div>
+      <div class="wrapper" ng-switch-default>
+        <h1 class="page-header">Documentation</h1>
+        <p>
+          Welcome to the documents page! Here you can select between some of my papers and presentations.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>

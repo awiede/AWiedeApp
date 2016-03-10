@@ -39,6 +39,12 @@ angular
         templateUrl: 'resume/resume.view.html',
         controller: 'ResumeCtrl',
         controllerAs: 'resume'
+      })
+      .state('docs', {
+        url: '/docs',
+        templateUrl: 'docs/docs.view.html',
+        controller: 'DocsCtrl',
+        controllerAs: 'docs'
       });
 
     $urlRouterProvider.otherwise('/');
