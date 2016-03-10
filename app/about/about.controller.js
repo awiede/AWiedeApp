@@ -2,16 +2,16 @@
 
 /**
  * @ngdoc function
- * @name awiedeWebApp.controller:MainCtrl
+ * @name awiedeWebApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the awiedeWebApp
  */
 angular.module('awiedeWebApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
+  .controller('AboutCtrl', ['$scope', function ($scope) {
+    $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  }]);

@@ -10,26 +10,23 @@
  */
 angular
   .module('awiedeWebApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ui.router',
+    'ui.bootstrap'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
+  .config(['$stateProvider', '$urlRouterProvider',function ($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('main', {
+        url : '/',
+        templateUrl: 'main/main.view.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
+      .state('about', {
+        url: '/about',
+        templateUrl: 'about/about.view.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
-  });
+
+    $urlRouterProvider.otherwise('/');
+  }]);

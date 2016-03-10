@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to AWiede.net</h1>
+    <p>
+      Welcome to AWiede.net, a site by me, about me, for you.
+    </p>
+  </div>
+
+  <p class="row">
+  <div ng-repeat="link in links" class="col-sm-3">
+    <a ng-href="{{link.url}}" class="btn btn-primary btn-lg btn-block btn-bottom-margin">
+      <!--<img class="aw-icon-white" height="32"  ng-src="{{link.imageUrl}}" />-->
+      <span ng-class="link.glyClass "></span>
+      {{link.text}}
+    </a>
+  </div>
+  </p>
+</div>
+
+<footer class="navbar-fixed-bottom">
+  This site is brought to you by Andreas Wiede. Icons used can be found <a href="http://glyphicons.com/">here</a>.
+</footer>
