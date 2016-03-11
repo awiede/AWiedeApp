@@ -53,8 +53,6 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   opacity: 0.7;
-  //color: white;
-  //background-color: #ff6666;
 
   .btn {
     font-size: 21px;
@@ -102,7 +100,7 @@ body {
 .aw-text-box {
   /* Fallback for web browsers that don't support RGBa */
   background-color: rgb(224, 224, 224);
-  /* RGBa with 0.6 opacity */
+  /* RGBa with 0.5 opacity */
   background-color: rgba(224, 224, 224, 0.5);
 }
 
