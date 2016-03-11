@@ -26,7 +26,7 @@
         <div class="container">
           <div class="navbar-header">
             <div class="navbar-left navbar-brand">
-              <a href="./">
+              <a href="./" class="btn">
                 <span class="glyphicon glyphicon-home"> AWiede.net</span>
               </a>
             </div>
@@ -41,7 +41,7 @@
 
           <div class="navbar-right collapse navbar-collapse" uib-collapse="isCollapsed" ng-click="toggleCollapse()">
             <ul class="nav navbar-nav">
-              <li ng-repeat="link in links">
+              <li ng-repeat="link in links" class="btn">
                 <a id="lnk{{link.text}}" href="" ng-href="{{link.url}}" ng-class="{active: isActive(link.url)}">
                   {{link.text}}
                 </a>
