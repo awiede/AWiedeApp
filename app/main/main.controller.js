@@ -11,6 +11,10 @@ angular.module('awiedeWebApp')
   .controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
     $scope.isCollapsed = true;
 
+    $scope.toggleCollapse = function() {
+      $scope.isCollapsed = !$scope.isCollapsed;
+    }
+
     $scope.init = function() {
       $scope.links = [
         {
