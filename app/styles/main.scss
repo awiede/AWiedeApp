@@ -96,3 +96,17 @@ body {
     border-bottom: 0;
   }
 }
+
+
+.aw-text-box {
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: rgb(224, 224, 224);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(224, 224, 224, 0.5);
+}
+
+//Get rid of this make a specific style for the angular selector
+//This is dumb
+.aw-opaque {
+  opacity: 0.5;
+}

@@ -1,6 +1,6 @@
 <div>
   <div ng-controller="DocsCtrl">
-    <select class="form-control" ng-model="selection" ng-options="doc.shortName for doc in docs">
+    <select class="form-control aw-opaque" ng-model="selection" ng-options="doc.shortName for doc in docs">
       <option value="">MAKE A SELECTION</option>
     </select>
     <div ng-switch="selection.switchName">
